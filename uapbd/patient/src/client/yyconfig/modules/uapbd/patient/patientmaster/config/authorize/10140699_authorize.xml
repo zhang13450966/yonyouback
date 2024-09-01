@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<authorizes>
+  <authorize>
+  	<appcode>10140699,10140699L,10140699P</appcode>
+  	<actions>
+       <action>uapbd.patient.SavePatientMasterVOAction</action>
+       <action>uapbd.patient.PatientMasterTreeRefAction</action>
+       <action>uapbd.patient.PrintPatientMasterVOAction</action>
+       <action>uapbd.patient.ListPatientMasterVOAction</action>
+       <action>uapbd.patient.PatientMasterGridRefAction</action>
+       <action>uapbd.patient.AddPatientMasterVOAction</action>
+	</actions>
+   </authorize>
+    <authorize>
+        <appcode>*</appcode>
+        <actions>
+            <action>uapbd.patient.PatientMasterDefaultGridRefAction</action>
+        </actions>
+    </authorize>
+</authorizes>

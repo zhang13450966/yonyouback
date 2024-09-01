@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="uapbd">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.uapbd.testmd.testmdmaster.ITestmdMasterVOService</interface>
+			<implementation>nc.impl.uapbd.testmd.testmdmaster.TestmdMasterVOServiceImpl</implementation>
+		</component>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.uapbd.testmd.testmdmaster.IQuery10KHForTESTMD24</interface>
+			<implementation>nc.impl.uapbd.testmd.testmdmaster.Query10KHForTESTMD24Impl</implementation>
+		</component>
+	</public>
+</module>

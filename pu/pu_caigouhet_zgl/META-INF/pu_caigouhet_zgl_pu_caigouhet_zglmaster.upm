@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="pu">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.pu_caigouhet_zgl.pu_caigouhet_zglmaster.IPu_caigouhet_zglMasterVOService</interface>
+			<implementation>nc.impl.pu.pu_caigouhet_zgl.pu_caigouhet_zglmaster.Pu_caigouhet_zglMasterVOServiceImpl</implementation>
+		</component>
+	</public>
+</module>

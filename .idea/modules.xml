@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hrkq/hrkq.iml" filepath="$PROJECT_DIR$/hrkq/hrkq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ncc-project.iml" filepath="$PROJECT_DIR$/.idea/ncc-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pu/office_cjm/office_cjm.iml" filepath="$PROJECT_DIR$/pu/office_cjm/office_cjm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pu/pu.iml" filepath="$PROJECT_DIR$/pu/pu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/train/train.iml" filepath="$PROJECT_DIR$/train/train.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uapbd/uapbd.iml" filepath="$PROJECT_DIR$/uapbd/uapbd.iml" />
+    </modules>
+  </component>
+</project>

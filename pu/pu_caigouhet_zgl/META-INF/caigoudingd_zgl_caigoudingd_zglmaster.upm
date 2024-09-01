@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="pu">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.caigoudingd_zgl.caigoudingd_zglmaster.IQuerypuzglForTRH102ZGL</interface>
+			<implementation>nc.impl.pu.caigoudingd_zgl.caigoudingd_zglmaster.QuerypuzglForTRH102ZGLImpl</implementation>
+		</component>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.caigoudingd_zgl.caigoudingd_zglmaster.ICaigoudingd_zglMasterVOService</interface>
+			<implementation>nc.impl.pu.caigoudingd_zgl.caigoudingd_zglmaster.Caigoudingd_zglMasterVOServiceImpl</implementation>
+		</component>
+	</public>
+</module>

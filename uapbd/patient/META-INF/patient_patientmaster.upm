@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="uapbd">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.uapbd.patient.patientmaster.IPatientMasterVOService</interface>
+			<implementation>nc.impl.uapbd.patient.patientmaster.PatientMasterVOServiceImpl</implementation>
+		</component>
+	</public>
+</module>

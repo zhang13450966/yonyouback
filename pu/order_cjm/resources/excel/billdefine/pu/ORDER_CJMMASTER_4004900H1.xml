@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding='utf-8'?>
+<ufinterface roottag="bill">
+    <vars>
+    </vars>
+    <!-- 表头 -->
+    <record displayName="主实体"
+			displayNameResid="主实体" 
+			metadataid="b357e32e-7d0c-437c-95ea-18358ee8ea4c" 
+			stabletag="header" 
+			tablename="pu_order_cjmmaster" 
+			tabletag="billhead"							
+			tabletype="head" 
+			typeName="表头" 
+			areaname="order_cjmMasterForm">
+		<!--对于需要依赖其它字段进行翻译的字段，例如“部门”需要依赖“业务单元”进行翻译
+			需要在“部门”对应的<field>标签中配置<translatorProperty>标签，<translatorProperty>
+			是用"="连接的键值对的形式，键为在翻译器中取值的key值，值为被依赖字段（本例中为“业务单元”）
+			的<variablename>的值，<variablename>标签的值需要自行配置。配置范例如下：
+	
+			<field desc="业务单元">
+      			<matchtag>pk_org</matchtag>
+      			<name>pk_org</name>
+      			<type>String</type>
+      			<variablename>pk_org</variablename>
+    		</field>
+    		<field desc="部门">
+      			<matchtag>pk_dept</matchtag>
+      			<name>pk_dept</name>
+      			<type>String</type>
+      			<translator></translator>
+      			<translatorProperty>pk_org=pk_org</translatorProperty>
+    		</field>
+			详细配置请参考：https://nccdev.yonyou.com 地址中导入导出部分的介绍
+			-->
+        		<field desc="子实体0">
+            		<matchtag>order_cjmslave0_order_cjmslave0</matchtag>
+            		<name>order_cjmslave0_order_cjmslave0</name>
+            		<type>ref(item)</type>
+            		<variablename>order_cjmslave0_order_cjmslave0</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<refitem>eb588619-167e-45bd-b458-e20836e20a97</refitem>
+        		</field>
+        		<field desc="采购组织">
+            		<matchtag>pk_org</matchtag>
+            		<name>pk_org</name>
+            		<type>org</type>
+            		<variablename>pk_org</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>985be8a4-3a36-4778-8afe-2d8ed3902659</basdoc>
+        		</field>
+        		<field desc="集团">
+            		<matchtag>pk_group</matchtag>
+            		<name>pk_group</name>
+            		<type>group</type>
+            		<variablename>pk_group</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>3b6dd171-2900-47f3-bfbe-41e4483a2a65</basdoc>
+            		<set>yes</set>
+            		<visual>yes</visual>
+        		</field>
+        		<field desc="订单编号">
+            		<matchtag>code</matchtag>
+            		<name>code</name>
+            		<type>String</type>
+            		<variablename>code</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="组织多版本">
+            		<matchtag>pk_org_v</matchtag>
+            		<name>pk_org_v</name>
+            		<type>org_v</type>
+            		<variablename>pk_org_v</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>da7bba89-9a59-42d6-a262-c13ef459dbd9</basdoc>
+        		</field>
+        		<field desc="制单时间">
+            		<matchtag>maketime</matchtag>
+            		<name>maketime</name>
+            		<type>UFDateTime</type>
+            		<variablename>maketime</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="最后修改时间">
+            		<matchtag>lastmaketime</matchtag>
+            		<name>lastmaketime</name>
+            		<type>UFDateTime</type>
+            		<variablename>lastmaketime</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="交易类型">
+            		<matchtag>transtype</matchtag>
+            		<name>transtype</name>
+            		<type>String</type>
+            		<variablename>transtype</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="交易类型pk">
+            		<matchtag>transtypepk</matchtag>
+            		<name>transtypepk</name>
+            		<type>BilltypeVO</type>
+            		<variablename>transtypepk</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>b0fa41cd-a649-4309-b685-d341a5d1b0ed</basdoc>
+        		</field>
+        		<field desc="业务类型">
+            		<matchtag>busitype</matchtag>
+            		<name>busitype</name>
+            		<type>BusitypeVO</type>
+            		<variablename>busitype</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>7717f1a3-b777-454e-abb5-ef8705a0f0c2</basdoc>
+        		</field>
+        		<field desc="供应商">
+            		<matchtag>pk_supplier</matchtag>
+            		<name>pk_supplier</name>
+            		<type>supplier</type>
+            		<variablename>pk_supplier</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>720dcc7c-ff19-48f4-b9c5-b90906682f45</basdoc>
+        		</field>
+        		<field desc="大区">
+            		<matchtag>pk_region</matchtag>
+            		<name>pk_region</name>
+            		<type>region_CjmMaster</type>
+            		<variablename>pk_region</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>022592a0-da5e-42b2-b9bc-d9ed490c18d2</basdoc>
+        		</field>
+        		<field desc="办事处">
+            		<matchtag>pk_office</matchtag>
+            		<name>pk_office</name>
+            		<type>office_CjmMaster</type>
+            		<variablename>pk_office</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>0ed5d233-a42f-4897-b4ad-b60fa8cd3f06</basdoc>
+        		</field>
+        		<field desc="采购员">
+            		<matchtag>pk_psndoc</matchtag>
+            		<name>pk_psndoc</name>
+            		<type>psndoc</type>
+            		<variablename>pk_psndoc</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>40d39c26-a2b6-4f16-a018-45664cac1a1f</basdoc>
+        		</field>
+        		<field desc="订单总数量">
+            		<matchtag>ntotalnum</matchtag>
+            		<name>ntotalnum</name>
+            		<type>UFDouble</type>
+            		<variablename>ntotalnum</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="订单总金额">
+            		<matchtag>ntotalmny</matchtag>
+            		<name>ntotalmny</name>
+            		<type>UFDouble</type>
+            		<variablename>ntotalmny</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项1">
+            		<matchtag>def1</matchtag>
+            		<name>def1</name>
+            		<type>CUSTOM</type>
+            		<variablename>def1</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项2">
+            		<matchtag>def2</matchtag>
+            		<name>def2</name>
+            		<type>CUSTOM</type>
+            		<variablename>def2</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项3">
+            		<matchtag>def3</matchtag>
+            		<name>def3</name>
+            		<type>CUSTOM</type>
+            		<variablename>def3</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项4">
+            		<matchtag>def4</matchtag>
+            		<name>def4</name>
+            		<type>CUSTOM</type>
+            		<variablename>def4</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项5">
+            		<matchtag>def5</matchtag>
+            		<name>def5</name>
+            		<type>CUSTOM</type>
+            		<variablename>def5</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项6">
+            		<matchtag>def6</matchtag>
+            		<name>def6</name>
+            		<type>CUSTOM</type>
+            		<variablename>def6</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项7">
+            		<matchtag>def7</matchtag>
+            		<name>def7</name>
+            		<type>CUSTOM</type>
+            		<variablename>def7</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项8">
+            		<matchtag>def8</matchtag>
+            		<name>def8</name>
+            		<type>CUSTOM</type>
+            		<variablename>def8</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项9">
+            		<matchtag>def9</matchtag>
+            		<name>def9</name>
+            		<type>CUSTOM</type>
+            		<variablename>def9</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项10">
+            		<matchtag>def10</matchtag>
+            		<name>def10</name>
+            		<type>CUSTOM</type>
+            		<variablename>def10</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项11">
+            		<matchtag>def11</matchtag>
+            		<name>def11</name>
+            		<type>CUSTOM</type>
+            		<variablename>def11</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项12">
+            		<matchtag>def12</matchtag>
+            		<name>def12</name>
+            		<type>CUSTOM</type>
+            		<variablename>def12</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项13">
+            		<matchtag>def13</matchtag>
+            		<name>def13</name>
+            		<type>CUSTOM</type>
+            		<variablename>def13</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项14">
+            		<matchtag>def14</matchtag>
+            		<name>def14</name>
+            		<type>CUSTOM</type>
+            		<variablename>def14</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项15">
+            		<matchtag>def15</matchtag>
+            		<name>def15</name>
+            		<type>CUSTOM</type>
+            		<variablename>def15</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项16">
+            		<matchtag>def16</matchtag>
+            		<name>def16</name>
+            		<type>CUSTOM</type>
+            		<variablename>def16</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项17">
+            		<matchtag>def17</matchtag>
+            		<name>def17</name>
+            		<type>CUSTOM</type>
+            		<variablename>def17</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项18">
+            		<matchtag>def18</matchtag>
+            		<name>def18</name>
+            		<type>CUSTOM</type>
+            		<variablename>def18</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项19">
+            		<matchtag>def19</matchtag>
+            		<name>def19</name>
+            		<type>CUSTOM</type>
+            		<variablename>def19</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="自定义项20">
+            		<matchtag>def20</matchtag>
+            		<name>def20</name>
+            		<type>CUSTOM</type>
+            		<variablename>def20</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="dr">
+            		<matchtag>dr</matchtag>
+            		<name>dr</name>
+            		<type>Integer</type>
+            		<variablename>dr</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="ts">
+            		<matchtag>ts</matchtag>
+            		<name>ts</name>
+            		<type>UFDateTime</type>
+            		<variablename>ts</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="vostatus">
+            		<matchtag>status</matchtag>
+            		<name>status</name>
+            		<type>Integer</type>
+            		<variablename>status</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+    </record>
+    
+    <!-- 表体   -->
+    <record classname="nc.vo.pu.order_cjm.Order_cjmSlave0VO[]" 
+    	areaname="order_cjmSlave0Sub"
+    	displayNameResid="子实体0"
+    	displayName="子实体0" 
+    	entitytag="item" 
+    	metadataid="eb588619-167e-45bd-b458-e20836e20a97"
+    	recordtype="vos"
+    	sentitytag="item" 
+    	tablename="order_cjmslave0_order_cjmslave0" 
+    	tabletype="body" 
+    	typeName="表体">
+    		<field desc="主键">
+            	<matchtag>pk_order_cjmslave0</matchtag>
+            	<name>pk_order_cjmslave0</name>
+            	<type>UFID</type>
+            	<variablename>pk_order_cjmslave0</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<set>yes</set>
+				<isRequired>no</isRequired>
+        	</field>
+    		<field desc="行号">
+            	<matchtag>rowno</matchtag>
+            	<name>rowno</name>
+            	<type>String</type>
+            	<variablename>rowno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源单据行号">
+            	<matchtag>srcrowno</matchtag>
+            	<name>srcrowno</name>
+            	<type>String</type>
+            	<variablename>srcrowno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源单据行主键">
+            	<matchtag>srcpk_billbid</matchtag>
+            	<name>srcpk_billbid</name>
+            	<type>String</type>
+            	<variablename>srcpk_billbid</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源单据主键">
+            	<matchtag>srcpk_billid</matchtag>
+            	<name>srcpk_billid</name>
+            	<type>String</type>
+            	<variablename>srcpk_billid</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源单据类型">
+            	<matchtag>srcbilltype</matchtag>
+            	<name>srcbilltype</name>
+            	<type>String</type>
+            	<variablename>srcbilltype</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源单据号">
+            	<matchtag>srcbillno</matchtag>
+            	<name>srcbillno</name>
+            	<type>String</type>
+            	<variablename>srcbillno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="物料">
+            	<matchtag>pk_material</matchtag>
+            	<name>pk_material</name>
+            	<type>material</type>
+            	<variablename>pk_material</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>c7dc0ccd-8872-4eee-8882-160e8f49dfad</basdoc>
+        	</field>
+    		<field desc="单位">
+            	<matchtag>cunit</matchtag>
+            	<name>cunit</name>
+            	<type>measdoc</type>
+            	<variablename>cunit</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>8e668e99-3c0e-401a-8f55-3d192e055c3c</basdoc>
+        	</field>
+    		<field desc="数量">
+            	<matchtag>nnum</matchtag>
+            	<name>nnum</name>
+            	<type>UFDouble</type>
+            	<variablename>nnum</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="单价">
+            	<matchtag>nprice</matchtag>
+            	<name>nprice</name>
+            	<type>UFDouble</type>
+            	<variablename>nprice</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="金额">
+            	<matchtag>nmny</matchtag>
+            	<name>nmny</name>
+            	<type>UFDouble</type>
+            	<variablename>nmny</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="累计入库数量">
+            	<matchtag>ntotalinnum</matchtag>
+            	<name>ntotalinnum</name>
+            	<type>UFDouble</type>
+            	<variablename>ntotalinnum</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项1">
+            	<matchtag>def1</matchtag>
+            	<name>def1</name>
+            	<type>CUSTOM</type>
+            	<variablename>def1</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项2">
+            	<matchtag>def2</matchtag>
+            	<name>def2</name>
+            	<type>CUSTOM</type>
+            	<variablename>def2</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项3">
+            	<matchtag>def3</matchtag>
+            	<name>def3</name>
+            	<type>CUSTOM</type>
+            	<variablename>def3</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项4">
+            	<matchtag>def4</matchtag>
+            	<name>def4</name>
+            	<type>CUSTOM</type>
+            	<variablename>def4</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项5">
+            	<matchtag>def5</matchtag>
+            	<name>def5</name>
+            	<type>CUSTOM</type>
+            	<variablename>def5</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项6">
+            	<matchtag>def6</matchtag>
+            	<name>def6</name>
+            	<type>CUSTOM</type>
+            	<variablename>def6</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项7">
+            	<matchtag>def7</matchtag>
+            	<name>def7</name>
+            	<type>CUSTOM</type>
+            	<variablename>def7</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项8">
+            	<matchtag>def8</matchtag>
+            	<name>def8</name>
+            	<type>CUSTOM</type>
+            	<variablename>def8</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项9">
+            	<matchtag>def9</matchtag>
+            	<name>def9</name>
+            	<type>CUSTOM</type>
+            	<variablename>def9</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项10">
+            	<matchtag>def10</matchtag>
+            	<name>def10</name>
+            	<type>CUSTOM</type>
+            	<variablename>def10</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项11">
+            	<matchtag>def11</matchtag>
+            	<name>def11</name>
+            	<type>CUSTOM</type>
+            	<variablename>def11</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项12">
+            	<matchtag>def12</matchtag>
+            	<name>def12</name>
+            	<type>CUSTOM</type>
+            	<variablename>def12</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项13">
+            	<matchtag>def13</matchtag>
+            	<name>def13</name>
+            	<type>CUSTOM</type>
+            	<variablename>def13</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项14">
+            	<matchtag>def14</matchtag>
+            	<name>def14</name>
+            	<type>CUSTOM</type>
+            	<variablename>def14</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项15">
+            	<matchtag>def15</matchtag>
+            	<name>def15</name>
+            	<type>CUSTOM</type>
+            	<variablename>def15</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项16">
+            	<matchtag>def16</matchtag>
+            	<name>def16</name>
+            	<type>CUSTOM</type>
+            	<variablename>def16</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项17">
+            	<matchtag>def17</matchtag>
+            	<name>def17</name>
+            	<type>CUSTOM</type>
+            	<variablename>def17</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项18">
+            	<matchtag>def18</matchtag>
+            	<name>def18</name>
+            	<type>CUSTOM</type>
+            	<variablename>def18</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项19">
+            	<matchtag>def19</matchtag>
+            	<name>def19</name>
+            	<type>CUSTOM</type>
+            	<variablename>def19</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="自定义项20">
+            	<matchtag>def20</matchtag>
+            	<name>def20</name>
+            	<type>CUSTOM</type>
+            	<variablename>def20</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="dr">
+            	<matchtag>dr</matchtag>
+            	<name>dr</name>
+            	<type>Integer</type>
+            	<variablename>dr</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="ts">
+            	<matchtag>ts</matchtag>
+            	<name>ts</name>
+            	<type>UFDateTime</type>
+            	<variablename>ts</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="vostatus">
+            	<matchtag>status</matchtag>
+            	<name>status</name>
+            	<type>Integer</type>
+            	<variablename>status</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    </record>
+
+</ufinterface>

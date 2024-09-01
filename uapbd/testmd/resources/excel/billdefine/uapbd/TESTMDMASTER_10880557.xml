@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding='utf-8'?>
+<ufinterface roottag="bill">
+    <vars>
+    </vars>
+    <!-- 表头 -->
+    <record displayName="主实体"
+			displayNameResid="主实体" 
+			metadataid="c20d2227-2ecd-44d8-bc4f-f5fcafe82248" 
+			stabletag="header" 
+			tablename="uapbd_testmdmaster" 
+			tabletag="billhead"							
+			tabletype="head" 
+			typeName="表头" 
+			areaname="testmdMasterForm">
+		<!--对于需要依赖其它字段进行翻译的字段，例如“部门”需要依赖“业务单元”进行翻译
+			需要在“部门”对应的<field>标签中配置<translatorProperty>标签，<translatorProperty>
+			是用"="连接的键值对的形式，键为在翻译器中取值的key值，值为被依赖字段（本例中为“业务单元”）
+			的<variablename>的值，<variablename>标签的值需要自行配置。配置范例如下：
+	
+			<field desc="业务单元">
+      			<matchtag>pk_org</matchtag>
+      			<name>pk_org</name>
+      			<type>String</type>
+      			<variablename>pk_org</variablename>
+    		</field>
+    		<field desc="部门">
+      			<matchtag>pk_dept</matchtag>
+      			<name>pk_dept</name>
+      			<type>String</type>
+      			<translator></translator>
+      			<translatorProperty>pk_org=pk_org</translatorProperty>
+    		</field>
+			详细配置请参考：https://nccdev.yonyou.com 地址中导入导出部分的介绍
+			-->
+        		<field desc="子实体0">
+            		<matchtag>testmdslave0_testmdslave0</matchtag>
+            		<name>testmdslave0_testmdslave0</name>
+            		<type>ref(item)</type>
+            		<variablename>testmdslave0_testmdslave0</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<refitem>8ac0927f-d8fe-4c7a-b892-ba25a16495d0</refitem>
+        		</field>
+        		<field desc="pk_org">
+            		<matchtag>pk_org</matchtag>
+            		<name>pk_org</name>
+            		<type>org</type>
+            		<variablename>pk_org</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>985be8a4-3a36-4778-8afe-2d8ed3902659</basdoc>
+        		</field>
+        		<field desc="pk_group">
+            		<matchtag>pk_group</matchtag>
+            		<name>pk_group</name>
+            		<type>group</type>
+            		<variablename>pk_group</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>3b6dd171-2900-47f3-bfbe-41e4483a2a65</basdoc>
+            		<set>yes</set>
+            		<visual>yes</visual>
+        		</field>
+        		<field desc="code">
+            		<matchtag>code</matchtag>
+            		<name>code</name>
+            		<type>String</type>
+            		<variablename>code</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="name">
+            		<matchtag>name</matchtag>
+            		<name>name</name>
+            		<type>String</type>
+            		<variablename>name</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="组织多版本">
+            		<matchtag>pk_org_v</matchtag>
+            		<name>pk_org_v</name>
+            		<type>org_v</type>
+            		<variablename>pk_org_v</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>da7bba89-9a59-42d6-a262-c13ef459dbd9</basdoc>
+        		</field>
+        		<field desc="制单时间">
+            		<matchtag>maketime</matchtag>
+            		<name>maketime</name>
+            		<type>UFDateTime</type>
+            		<variablename>maketime</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="最后修改时间1">
+            		<matchtag>lastmaketime</matchtag>
+            		<name>lastmaketime</name>
+            		<type>UFDateTime</type>
+            		<variablename>lastmaketime</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="交易类型">
+            		<matchtag>transtype</matchtag>
+            		<name>transtype</name>
+            		<type>String</type>
+            		<variablename>transtype</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="交易类型pk">
+            		<matchtag>transtypepk</matchtag>
+            		<name>transtypepk</name>
+            		<type>BilltypeVO</type>
+            		<variablename>transtypepk</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>b0fa41cd-a649-4309-b685-d341a5d1b0ed</basdoc>
+        		</field>
+        		<field desc="业务类型">
+            		<matchtag>busitype</matchtag>
+            		<name>busitype</name>
+            		<type>BusitypeVO</type>
+            		<variablename>busitype</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>7717f1a3-b777-454e-abb5-ef8705a0f0c2</basdoc>
+        		</field>
+        		<field desc="冻结状态">
+            		<matchtag>saga_frozen</matchtag>
+            		<name>saga_frozen</name>
+            		<type>Integer</type>
+            		<variablename>saga_frozen</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="全局事务id">
+            		<matchtag>saga_gtxid</matchtag>
+            		<name>saga_gtxid</name>
+            		<type>String</type>
+            		<variablename>saga_gtxid</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="分支事务id">
+            		<matchtag>saga_btxid</matchtag>
+            		<name>saga_btxid</name>
+            		<type>String</type>
+            		<variablename>saga_btxid</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="事务状态">
+            		<matchtag>saga_status</matchtag>
+            		<name>saga_status</name>
+            		<type>Integer</type>
+            		<variablename>saga_status</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="dr">
+            		<matchtag>dr</matchtag>
+            		<name>dr</name>
+            		<type>Integer</type>
+            		<variablename>dr</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="ts">
+            		<matchtag>ts</matchtag>
+            		<name>ts</name>
+            		<type>UFDateTime</type>
+            		<variablename>ts</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="vostatus">
+            		<matchtag>status</matchtag>
+            		<name>status</name>
+            		<type>Integer</type>
+            		<variablename>status</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+    </record>
+    
+    <!-- 表体   -->
+    <record classname="nc.vo.testmd.testmd.TestmdSlave0VO[]" 
+    	areaname="testmdSlave0Sub"
+    	displayNameResid="子实体0"
+    	displayName="子实体0" 
+    	entitytag="item" 
+    	metadataid="8ac0927f-d8fe-4c7a-b892-ba25a16495d0"
+    	recordtype="vos"
+    	sentitytag="item" 
+    	tablename="testmdslave0_testmdslave0" 
+    	tabletype="body" 
+    	typeName="表体">
+    		<field desc="主键">
+            	<matchtag>pk_testmdslave0</matchtag>
+            	<name>pk_testmdslave0</name>
+            	<type>UFID</type>
+            	<variablename>pk_testmdslave0</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<set>yes</set>
+				<isRequired>no</isRequired>
+        	</field>
+    		<field desc="行号">
+            	<matchtag>rowno</matchtag>
+            	<name>rowno</name>
+            	<type>String</type>
+            	<variablename>rowno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源行号">
+            	<matchtag>srcrowno</matchtag>
+            	<name>srcrowno</name>
+            	<type>String</type>
+            	<variablename>srcrowno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="dr">
+            	<matchtag>dr</matchtag>
+            	<name>dr</name>
+            	<type>Integer</type>
+            	<variablename>dr</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="ts">
+            	<matchtag>ts</matchtag>
+            	<name>ts</name>
+            	<type>UFDateTime</type>
+            	<variablename>ts</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="vostatus">
+            	<matchtag>status</matchtag>
+            	<name>status</name>
+            	<type>Integer</type>
+            	<variablename>status</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    </record>
+
+</ufinterface>

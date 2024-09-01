@@ -1,0 +1,6 @@
+insert into BD_REFINFO ( CODE,ISTREELAZYLOAD,ISNEEDPARA,ISSPECIALREF,LAYER,REFTYPE,METADATANAMESPACE,METADATATYPENAME,MOBILEREFPATH,MODULENAME,NAME,PARA1,PARA2,PARA3,PK_COUNTRY,PK_INDUSTRY,PK_REFINFO,REFCLASS,REFPATH,REFSYSTEM,RESERV1,RESERV2,RESERV3,RESID,RESIDPATH,WHEREPART,WORKFLOWCONDITIONUSEUNITORG,TS,DR ) values  ( '4004800H1','N',null,null,null,0,'pu','region_CjmMaster',null,'pu','大区-陈金明_大区-陈金明_表参照_region_cjm_region_CjmMaster',null,null,null,null,null,'1001A11LCP00001IIVLE',null,'pu/refer/region_cjm/region_CjmMasterGridRef/index',null,null,null,null,'region_cjm','region_cjm',null,null,'2023-08-30 13:04:29',0 ) 
+/
+
+insert into BD_REFINFO ( CODE,ISTREELAZYLOAD,ISNEEDPARA,ISSPECIALREF,LAYER,REFTYPE,METADATANAMESPACE,METADATATYPENAME,MOBILEREFPATH,MODULENAME,NAME,PARA1,PARA2,PARA3,PK_COUNTRY,PK_INDUSTRY,PK_REFINFO,REFCLASS,REFPATH,REFSYSTEM,RESERV1,RESERV2,RESERV3,RESID,RESIDPATH,WHEREPART,WORKFLOWCONDITIONUSEUNITORG,TS,DR ) values  ( '4004800H1','N',null,null,null,0,'pu','region_CjmMaster',null,'pu','大区-陈金明_大区-陈金明_默认表参照_region_cjm_region_CjmMaster',null,null,null,null,null,'1001A11LCP00001IIVMK',null,'pu/refer/region_cjm/region_CjmMasterDefaultGridRef/index',null,null,null,null,'region_cjm','region_cjm',null,null,'2023-08-30 13:04:35',0 ) 
+/
+

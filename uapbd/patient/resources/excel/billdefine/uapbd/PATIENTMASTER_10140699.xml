@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding='utf-8'?>
+<ufinterface roottag="bill">
+    <vars>
+    </vars>
+    <!-- 表头 -->
+    <record displayName="主实体"
+			displayNameResid="主实体" 
+			metadataid="bdca937a-c341-4485-a9f5-1377af31f057" 
+			stabletag="header" 
+			tablename="uapbd_patientmaster" 
+			tabletag="billhead"							
+			tabletype="head" 
+			typeName="表头" 
+			areaname="patientMasterTable">
+		<!--对于需要依赖其它字段进行翻译的字段，例如“部门”需要依赖“业务单元”进行翻译
+			需要在“部门”对应的<field>标签中配置<translatorProperty>标签，<translatorProperty>
+			是用"="连接的键值对的形式，键为在翻译器中取值的key值，值为被依赖字段（本例中为“业务单元”）
+			的<variablename>的值，<variablename>标签的值需要自行配置。配置范例如下：
+	
+			<field desc="业务单元">
+      			<matchtag>pk_org</matchtag>
+      			<name>pk_org</name>
+      			<type>String</type>
+      			<variablename>pk_org</variablename>
+    		</field>
+    		<field desc="部门">
+      			<matchtag>pk_dept</matchtag>
+      			<name>pk_dept</name>
+      			<type>String</type>
+      			<translator></translator>
+      			<translatorProperty>pk_org=pk_org</translatorProperty>
+    		</field>
+			详细配置请参考：https://nccdev.yonyou.com 地址中导入导出部分的介绍
+			-->
+        		<field desc="主键">
+            		<matchtag>pk_patientmaster</matchtag>
+            		<name>pk_patientmaster</name>
+            		<type>UFID</type>
+            		<variablename>pk_patientmaster</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<set>yes</set>
+					<isRequired>no</isRequired>
+        		</field>
+        		<field desc="pk_org">
+            		<matchtag>pk_org</matchtag>
+            		<name>pk_org</name>
+            		<type>org</type>
+            		<variablename>pk_org</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>985be8a4-3a36-4778-8afe-2d8ed3902659</basdoc>
+        		</field>
+        		<field desc="pk_group">
+            		<matchtag>pk_group</matchtag>
+            		<name>pk_group</name>
+            		<type>group</type>
+            		<variablename>pk_group</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>3b6dd171-2900-47f3-bfbe-41e4483a2a65</basdoc>
+            		<set>yes</set>
+            		<visual>yes</visual>
+        		</field>
+        		<field desc="code">
+            		<matchtag>code</matchtag>
+            		<name>code</name>
+            		<type>String</type>
+            		<variablename>code</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="name">
+            		<matchtag>name</matchtag>
+            		<name>name</name>
+            		<type>String</type>
+            		<variablename>name</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="身份证号">
+            		<matchtag>vcardid</matchtag>
+            		<name>vcardid</name>
+            		<type>String</type>
+            		<variablename>vcardid</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="科室名称">
+            		<matchtag>vdeptname</matchtag>
+            		<name>vdeptname</name>
+            		<type>String</type>
+            		<variablename>vdeptname</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="科室编码">
+            		<matchtag>vdeptcode</matchtag>
+            		<name>vdeptcode</name>
+            		<type>String</type>
+            		<variablename>vdeptcode</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="病历号">
+            		<matchtag>medicalno</matchtag>
+            		<name>medicalno</name>
+            		<type>String</type>
+            		<variablename>medicalno</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="住院次数">
+            		<matchtag>admission</matchtag>
+            		<name>admission</name>
+            		<type>Integer</type>
+            		<variablename>admission</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="dr">
+            		<matchtag>dr</matchtag>
+            		<name>dr</name>
+            		<type>Integer</type>
+            		<variablename>dr</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="ts">
+            		<matchtag>ts</matchtag>
+            		<name>ts</name>
+            		<type>UFDateTime</type>
+            		<variablename>ts</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="vostatus">
+            		<matchtag>status</matchtag>
+            		<name>status</name>
+            		<type>Integer</type>
+            		<variablename>status</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+    </record>
+    
+    <!-- 表体   -->
+
+</ufinterface>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<authorizes>
+  <authorize>
+  	<appcode>10880557,10880557L,10880557P</appcode>
+  	<actions>
+       <action>uapbd.testmd.SaveTestmdMasterVOAction</action>
+       <action>uapbd.testmd.CopyTestmdMasterVOAction</action>
+       <action>uapbd.testmd.PrintTestmdMasterVOAction</action>
+       <action>uapbd.testmd.EditTestmdMasterVOAction</action>
+       <action>uapbd.testmd.TestmdMasterGridRefAction</action>
+       <action>uapbd.testmd.PFlowTestmdMasterVOAction</action>
+       <action>uapbd.testmd.AddTestmdMasterVOAction</action>
+       <action>uapbd.testmd.LoadTestmdMasterVOAction</action>
+       <action>uapbd.testmd.TestmdMasterTreeRefAction</action>
+       <action>uapbd.testmd.Query10KHForTESTMD24TestmdMasterVOAction</action>
+       <action>uapbd.testmd.ListTestmdMasterVOAction</action>
+       <action>uapbd.testmd.DeleteTestmdMasterVOAction</action>
+       <action>uapbd.testmd.TransferTestmdMasterVOAction</action>
+	</actions>
+   </authorize>
+    <authorize>
+        <appcode>*</appcode>
+        <actions>
+            <action>uapbd.testmd.TestmdMasterDefaultGridRefAction</action>
+        </actions>
+    </authorize>
+</authorizes>

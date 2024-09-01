@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding='utf-8'?>
+<ufinterface roottag="bill">
+    <vars>
+    </vars>
+    <!-- 表头 -->
+    <record displayName="主实体"
+			displayNameResid="主实体" 
+			metadataid="4dc301f5-91fe-4897-968e-df1f1e30cd23" 
+			stabletag="header" 
+			tablename="pu_caigoudingd_zglmaster"
+			tabletag="billhead"							
+			tabletype="head" 
+			typeName="表头" 
+			areaname="caigoudingd_zglMasterForm">
+		<!--对于需要依赖其它字段进行翻译的字段，例如“部门”需要依赖“业务单元”进行翻译
+			需要在“部门”对应的<field>标签中配置<translatorProperty>标签，<translatorProperty>
+			是用"="连接的键值对的形式，键为在翻译器中取值的key值，值为被依赖字段（本例中为“业务单元”）
+			的<variablename>的值，<variablename>标签的值需要自行配置。配置范例如下：
+	
+			<field desc="业务单元">
+      			<matchtag>pk_org</matchtag>
+      			<name>pk_org</name>
+      			<type>String</type>
+      			<variablename>pk_org</variablename>
+    		</field>
+    		<field desc="部门">
+      			<matchtag>pk_dept</matchtag>
+      			<name>pk_dept</name>
+      			<type>String</type>
+      			<translator></translator>
+      			<translatorProperty>pk_org=pk_org</translatorProperty>
+    		</field>
+			详细配置请参考：https://nccdev.yonyou.com 地址中导入导出部分的介绍
+			-->
+        		<field desc="实际终止日期">
+            		<matchtag>actualinvalidate</matchtag>
+            		<name>actualinvalidate</name>
+            		<type>UFDate</type>
+            		<variablename>actualinvalidate</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="供应商">
+            		<matchtag>pk_supplier</matchtag>
+            		<name>pk_supplier</name>
+            		<type>supplier</type>
+            		<variablename>pk_supplier</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>720dcc7c-ff19-48f4-b9c5-b90906682f45</basdoc>
+        		</field>
+        		<field desc="币种">
+            		<matchtag>ccurrencyid</matchtag>
+            		<name>ccurrencyid</name>
+            		<type>currtype</type>
+            		<variablename>ccurrencyid</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>b498bc9a-e5fd-4613-8da8-bdae2a05704a</basdoc>
+        		</field>
+        		<field desc="总数量">
+            		<matchtag>ntotalastnum</matchtag>
+            		<name>ntotalastnum</name>
+            		<type>UFDouble</type>
+            		<variablename>ntotalastnum</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="本币价税合计">
+            		<matchtag>ntotaltaxmny</matchtag>
+            		<name>ntotaltaxmny</name>
+            		<type>UFDouble</type>
+            		<variablename>ntotaltaxmny</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="备注">
+            		<matchtag>vmemo</matchtag>
+            		<name>vmemo</name>
+            		<type>String</type>
+            		<variablename>vmemo</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="子实体0">
+            		<matchtag>cgdingdan_zglslave0_caigoudingd_zglslave0</matchtag>
+            		<name>cgdingdan_zglslave0_caigoudingd_zglslave0</name>
+            		<type>ref(item)</type>
+            		<variablename>cgdingdan_zglslave0_caigoudingd_zglslave0</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<refitem>a8d13377-522d-4cec-8d20-d1dbca29e905</refitem>
+        		</field>
+        		<field desc="pk_org">
+            		<matchtag>pk_org</matchtag>
+            		<name>pk_org</name>
+            		<type>org</type>
+            		<variablename>pk_org</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>985be8a4-3a36-4778-8afe-2d8ed3902659</basdoc>
+        		</field>
+        		<field desc="pk_group">
+            		<matchtag>pk_group</matchtag>
+            		<name>pk_group</name>
+            		<type>group</type>
+            		<variablename>pk_group</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>3b6dd171-2900-47f3-bfbe-41e4483a2a65</basdoc>
+            		<set>yes</set>
+            		<visual>yes</visual>
+        		</field>
+        		<field desc="code">
+            		<matchtag>code</matchtag>
+            		<name>code</name>
+            		<type>String</type>
+            		<variablename>code</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="组织多版本">
+            		<matchtag>pk_org_v</matchtag>
+            		<name>pk_org_v</name>
+            		<type>org_v</type>
+            		<variablename>pk_org_v</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>da7bba89-9a59-42d6-a262-c13ef459dbd9</basdoc>
+        		</field>
+        		<field desc="制单时间">
+            		<matchtag>maketime</matchtag>
+            		<name>maketime</name>
+            		<type>UFDateTime</type>
+            		<variablename>maketime</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="最后修改时间">
+            		<matchtag>lastmaketime</matchtag>
+            		<name>lastmaketime</name>
+            		<type>UFDateTime</type>
+            		<variablename>lastmaketime</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="交易类型">
+            		<matchtag>transtype</matchtag>
+            		<name>transtype</name>
+            		<type>String</type>
+            		<variablename>transtype</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="交易类型pk">
+            		<matchtag>transtypepk</matchtag>
+            		<name>transtypepk</name>
+            		<type>BilltypeVO</type>
+            		<variablename>transtypepk</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>b0fa41cd-a649-4309-b685-d341a5d1b0ed</basdoc>
+        		</field>
+        		<field desc="业务类型">
+            		<matchtag>busitype</matchtag>
+            		<name>busitype</name>
+            		<type>BusitypeVO</type>
+            		<variablename>busitype</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>7717f1a3-b777-454e-abb5-ef8705a0f0c2</basdoc>
+        		</field>
+        		<field desc="冻结状态">
+            		<matchtag>saga_frozen</matchtag>
+            		<name>saga_frozen</name>
+            		<type>Integer</type>
+            		<variablename>saga_frozen</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="全局事务id">
+            		<matchtag>saga_gtxid</matchtag>
+            		<name>saga_gtxid</name>
+            		<type>String</type>
+            		<variablename>saga_gtxid</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="分支事务id">
+            		<matchtag>saga_btxid</matchtag>
+            		<name>saga_btxid</name>
+            		<type>String</type>
+            		<variablename>saga_btxid</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="事务状态">
+            		<matchtag>saga_status</matchtag>
+            		<name>saga_status</name>
+            		<type>Integer</type>
+            		<variablename>saga_status</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="订单编号">
+            		<matchtag>vbillcode</matchtag>
+            		<name>vbillcode</name>
+            		<type>String</type>
+            		<variablename>vbillcode</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="订单日期">
+            		<matchtag>vbilldate</matchtag>
+            		<name>vbilldate</name>
+            		<type>UFDate</type>
+            		<variablename>vbilldate</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="采购员">
+            		<matchtag>cemployeeid</matchtag>
+            		<name>cemployeeid</name>
+            		<type>psndoc</type>
+            		<variablename>cemployeeid</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>40d39c26-a2b6-4f16-a018-45664cac1a1f</basdoc>
+        		</field>
+        		<field desc="采购部门">
+            		<matchtag>pk_dept</matchtag>
+            		<name>pk_dept</name>
+            		<type>dept</type>
+            		<variablename>pk_dept</variablename>
+            		<nullallowed>yes</nullallowed>
+            		<basdoc>b26fa3cb-4087-4027-a3b6-c83ab2a086a9</basdoc>
+            		<translatorProperty>pk_org=pk_org</translatorProperty>
+        		</field>
+        		<field desc="实际生效日期">
+            		<matchtag>actualvalidate</matchtag>
+            		<name>actualvalidate</name>
+            		<type>UFDate</type>
+            		<variablename>actualvalidate</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="dr">
+            		<matchtag>dr</matchtag>
+            		<name>dr</name>
+            		<type>Integer</type>
+            		<variablename>dr</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="ts">
+            		<matchtag>ts</matchtag>
+            		<name>ts</name>
+            		<type>UFDateTime</type>
+            		<variablename>ts</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+        		<field desc="vostatus">
+            		<matchtag>status</matchtag>
+            		<name>status</name>
+            		<type>Integer</type>
+            		<variablename>status</variablename>
+            		<nullallowed>yes</nullallowed>
+        		</field>
+    </record>
+    
+    <!-- 表体   -->
+    <record classname="nc.vo.caigoudingdan.caigoudingd_zgl.Caigoudingd_zglSlave0VO[]" 
+    	areaname="caigoudingd_zglSlave0Sub"
+    	displayNameResid="子实体0"
+    	displayName="子实体0" 
+    	entitytag="item" 
+    	metadataid="a8d13377-522d-4cec-8d20-d1dbca29e905"
+    	recordtype="vos"
+    	sentitytag="item" 
+    	tablename="cgdingdan_zglslave0_caigoudingd_zglslave0" 
+    	tabletype="body" 
+    	typeName="表体">
+    		<field desc="物料信息">
+            	<matchtag>pk_material</matchtag>
+            	<name>pk_material</name>
+            	<type>material_v</type>
+            	<variablename>pk_material</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>eae040f4-3c88-413d-abc9-b15774463d46</basdoc>
+        	</field>
+    		<field desc="物料基本分类">
+            	<matchtag>pk_marbasclass</matchtag>
+            	<name>pk_marbasclass</name>
+            	<type>marbasclass</type>
+            	<variablename>pk_marbasclass</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>82c1a45f-801a-429c-a87b-ce6cb85f8377</basdoc>
+        	</field>
+    		<field desc="计量单位">
+            	<matchtag>castunitid</matchtag>
+            	<name>castunitid</name>
+            	<type>measdoc</type>
+            	<variablename>castunitid</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>8e668e99-3c0e-401a-8f55-3d192e055c3c</basdoc>
+        	</field>
+    		<field desc="生产厂商">
+            	<matchtag>cproductorid</matchtag>
+            	<name>cproductorid</name>
+            	<type>Defdoc-BD006_0xx</type>
+            	<variablename>cproductorid</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>1002ZZ1000000000066Q</basdoc>
+        	</field>
+    		<field desc="税率">
+            	<matchtag>ntaxrate</matchtag>
+            	<name>ntaxrate</name>
+            	<type>UFDouble</type>
+            	<variablename>ntaxrate</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="数量">
+            	<matchtag>nastnum</matchtag>
+            	<name>nastnum</name>
+            	<type>UFDouble</type>
+            	<variablename>nastnum</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="需求日期">
+            	<matchtag>dreqdate</matchtag>
+            	<name>dreqdate</name>
+            	<type>UFDate</type>
+            	<variablename>dreqdate</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="建议供应商">
+            	<matchtag>pk_suggestsupplier</matchtag>
+            	<name>pk_suggestsupplier</name>
+            	<type>supplier</type>
+            	<variablename>pk_suggestsupplier</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>720dcc7c-ff19-48f4-b9c5-b90906682f45</basdoc>
+        	</field>
+    		<field desc="需求仓库">
+            	<matchtag>pk_reqstor</matchtag>
+            	<name>pk_reqstor</name>
+            	<type>stordoc</type>
+            	<variablename>pk_reqstor</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>5489bda0-d876-4db2-9568-02954f240cc8</basdoc>
+        	</field>
+    		<field desc="本币含税单价">
+            	<matchtag>ntaxprice</matchtag>
+            	<name>ntaxprice</name>
+            	<type>UFDouble</type>
+            	<variablename>ntaxprice</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="本币价税合计">
+            	<matchtag>ntaxmny</matchtag>
+            	<name>ntaxmny</name>
+            	<type>UFDouble</type>
+            	<variablename>ntaxmny</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="收货地点">
+            	<matchtag>cdevaddrid</matchtag>
+            	<name>cdevaddrid</name>
+            	<type>addressdoc</type>
+            	<variablename>cdevaddrid</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>8eeaabfe-7644-4bd0-a954-f8971a14f079</basdoc>
+        	</field>
+    		<field desc="来源交易类型">
+            	<matchtag>srctranstype</matchtag>
+            	<name>srctranstype</name>
+            	<type>BilltypeVO</type>
+            	<variablename>srctranstype</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>b0fa41cd-a649-4309-b685-d341a5d1b0ed</basdoc>
+        	</field>
+    		<field desc="来源交易类型编 码">
+            	<matchtag>srctranstypecode</matchtag>
+            	<name>srctranstypecode</name>
+            	<type>String</type>
+            	<variablename>srctranstypecode</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源单据类型">
+            	<matchtag>srcbilltype</matchtag>
+            	<name>srcbilltype</name>
+            	<type>BilltypeVO</type>
+            	<variablename>srcbilltype</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<basdoc>b0fa41cd-a649-4309-b685-d341a5d1b0ed</basdoc>
+        	</field>
+    		<field desc="来源单据">
+            	<matchtag>csourceid</matchtag>
+            	<name>csourceid</name>
+            	<type>UFID</type>
+            	<variablename>csourceid</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<set>yes</set>
+				<isRequired>no</isRequired>
+        	</field>
+    		<field desc="来源单据明细">
+            	<matchtag>csourcebid</matchtag>
+            	<name>csourcebid</name>
+            	<type>UFID</type>
+            	<variablename>csourcebid</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<set>yes</set>
+				<isRequired>no</isRequired>
+        	</field>
+    		<field desc="主键">
+            	<matchtag>pk_cgdingdan_zglslave0</matchtag>
+            	<name>pk_cgdingdan_zglslave0</name>
+            	<type>UFID</type>
+            	<variablename>pk_cgdingdan_zglslave0</variablename>
+            	<nullallowed>yes</nullallowed>
+            	<set>yes</set>
+				<isRequired>no</isRequired>
+        	</field>
+    		<field desc="行号">
+            	<matchtag>rowno</matchtag>
+            	<name>rowno</name>
+            	<type>String</type>
+            	<variablename>rowno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="来源行号">
+            	<matchtag>srcrowno</matchtag>
+            	<name>srcrowno</name>
+            	<type>String</type>
+            	<variablename>srcrowno</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="dr">
+            	<matchtag>dr</matchtag>
+            	<name>dr</name>
+            	<type>Integer</type>
+            	<variablename>dr</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="ts">
+            	<matchtag>ts</matchtag>
+            	<name>ts</name>
+            	<type>UFDateTime</type>
+            	<variablename>ts</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    		<field desc="vostatus">
+            	<matchtag>status</matchtag>
+            	<name>status</name>
+            	<type>Integer</type>
+            	<variablename>status</variablename>
+            	<nullallowed>yes</nullallowed>
+        	</field>
+    </record>
+
+</ufinterface>

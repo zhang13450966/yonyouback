@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Middleware_Library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../ncc-home/middleware/classes" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/comp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/ecj-4.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/fwejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/j2ee.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/javaee.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/jdmkrt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/jmx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/mw.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/standard.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/starter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ncc-home/middleware/tcsrc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../ncc-home/middleware/classes" />
+    </SOURCES>
+  </library>
+</component>

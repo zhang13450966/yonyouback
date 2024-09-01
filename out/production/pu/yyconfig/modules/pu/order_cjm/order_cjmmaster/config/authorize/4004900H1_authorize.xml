@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<authorizes>
+  <authorize>
+  	<appcode>4004900H1,4004900H1L,4004900H1P</appcode>
+  	<actions>
+       <action>pu.order_cjm.SaveOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.LoadOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.CopyOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.ListSlaveOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.PrintOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.EditOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.ListOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.DeleteOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.PFlowOrder_cjmMasterVOAction</action>
+       <action>pu.order_cjm.AddOrder_cjmMasterVOAction</action>
+	</actions>
+   </authorize>
+    <authorize>
+        <appcode>*</appcode>
+        <actions>
+            <action>pu.order_cjm.Order_cjmMasterDefaultGridRefAction</action>
+        </actions>
+    </authorize>
+</authorizes>

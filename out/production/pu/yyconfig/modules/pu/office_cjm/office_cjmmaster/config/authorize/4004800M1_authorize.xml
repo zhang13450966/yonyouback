@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<authorizes>
+  <authorize>
+  	<appcode>4004800M1,4004800M1L,4004800M1P</appcode>
+  	<actions>
+       <action>pu.office_cjm.SaveOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.CopyOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.PrintOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.EditOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.Office_CjmMasterGridRefAction</action>
+       <action>pu.office_cjm.AddOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.LoadOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.Office_CjmMasterTreeRefAction</action>
+       <action>pu.office_cjm.ListOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.DeleteOffice_CjmMasterVOAction</action>
+       <action>pu.office_cjm.LoadTreeRegion_CjmMasterVOAction</action>
+	</actions>
+   </authorize>
+    <authorize>
+        <appcode>*</appcode>
+        <actions>
+            <action>pu.office_cjm.Office_CjmMasterDefaultGridRefAction</action>
+        </actions>
+    </authorize>
+</authorizes>

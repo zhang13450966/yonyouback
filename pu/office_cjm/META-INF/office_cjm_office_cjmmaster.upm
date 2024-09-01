@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="pu">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.office_cjm.office_cjmmaster.IRegion_CjmMasterVOService</interface>
+			<implementation>nc.impl.pu.office_cjm.office_cjmmaster.Region_CjmMasterVOServiceImpl</implementation>
+		</component>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.office_cjm.office_cjmmaster.IOffice_CjmMasterVOService</interface>
+			<implementation>nc.impl.pu.office_cjm.office_cjmmaster.Office_CjmMasterVOServiceImpl</implementation>
+		</component>
+	</public>
+</module>

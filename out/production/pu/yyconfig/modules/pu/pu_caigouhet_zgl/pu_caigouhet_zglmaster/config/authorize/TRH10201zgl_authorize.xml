@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<authorizes>
+  <authorize>
+  	<appcode>TRH10201zgl,TRH10201zglL,TRH10201zglP</appcode>
+  	<actions>
+       <action>pu.pu_caigouhet_zgl.SavePu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.LoadPu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.CopyPu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.PrintPu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.EditPu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.ListPu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.DeletePu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.PFlowPu_caigouhet_zglMasterVOAction</action>
+       <action>pu.pu_caigouhet_zgl.AddPu_caigouhet_zglMasterVOAction</action>
+	</actions>
+   </authorize>
+    <authorize>
+        <appcode>*</appcode>
+        <actions>
+            <action>pu.pu_caigouhet_zgl.Pu_caigouhet_zglMasterDefaultGridRefAction</action>
+        </actions>
+    </authorize>
+</authorizes>

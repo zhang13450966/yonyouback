@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding='gb2312'?>
+<module>
+	<rest>
+		<resource classname="nccloud.api.pu.pu_caigouhet_zglmanage.pu_caigouhet_zglmaster.Pu_caigouhet_zglMasterManageResources"  exinfo=""/>
+	</rest>
+</module>

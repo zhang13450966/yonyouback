@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="openapi">
+    <option name="configVOListJsonStr" value="[{&quot;homeversion&quot;:&quot;2105&quot;,&quot;configname&quot;:&quot;订单新增API测试&quot;,&quot;serverip&quot;:&quot;127.0.0.1&quot;,&quot;serverPort&quot;:&quot;1235&quot;,&quot;busicode&quot;:&quot;develop&quot;,&quot;appSecret&quot;:&quot;a72b9b9d9cf24f4a8e26&quot;,&quot;usercode&quot;:&quot;cjm&quot;,&quot;appid&quot;:&quot;TEST&quot;,&quot;pubSecret&quot;:&quot;MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkBdlB8bsJPNZg04U4uQa4dq89hKh/miQ5AKrFhrJZbJDYVEDjWNO/z//whwdd+ZsHtPjLBLJVAXLlewMk0H5IJCE1NXM1NgjBKWWrIHeIIzF5hNUtlLNiy1ZwjBat51YKP/WH170B2+FJ2Of8BkCsn96Cj8xePQ+nnA2kt1BH7PJPiLGqAuqWjuaR0quuUH6Rhc1xoOFsvWULqxipPdrvJr6McQ/FhuwaZYpqWdPgUhHeUOzoSM7BH1gx/mv/1OfCZkf3QPsZIj8pRlp3z0VepzY02xwqT1bsB+Mor5QfKWAT3q76Ts8cmu81ib/mfnMXz74KtSSvl5M/VTdoDEUqwIDAQAB&quot;}]" />
+  </component>
+</project>

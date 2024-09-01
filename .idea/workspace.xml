@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1ee2eb3-a2df-4a05-b5ee-915decf3673f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/TestOpenApi/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestOpenApi/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestOpenApi/src/nccloud/api/testcase/base/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestOpenApi/src/nccloud/api/testcase/base/TestSecureRandom.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TestOpenApi" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2RVRENuwNTZ1lvO4yJQSQ47ZIHO" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/git&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1150748&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2731377&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\public" />
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\private" />
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\client" />
+      <recent name="D:\devhome\ncc-project\hrkq\extend\METADATA\trip" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\private\nc\impl\pu\caigoudingd_zgl\caigoudingd_zglmaster" />
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\public\nccloud\api\pu\caigoudingd_zglmanage\caigoudingd_zglmaster" />
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\public\nc\vo\caigoudingdan\caigoudingd_zgl" />
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\public\nc\itf\pu\caigoudingd_zgl\caigoudingd_zglmaster" />
+      <recent name="D:\DevHome\ncc-project\pu\pu_caigouhet_zgl\src\public\nc\bs\pub\action" />
+    </key>
+  </component>
+  <component name="RunManager" selected="YonBuilder Premium服务.pu - 中间件">
+    <configuration name="hrkq - 中间件" type="NCCloud" factoryName="NCCloud_Server">
+      <module name="hrkq" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pu - 中间件" type="NCCloud" factoryName="NCCloud_Server">
+      <module name="pu" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="train - 中间件" type="NCCloud" factoryName="NCCloud_Server">
+      <module name="train" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uapbd - 中间件" type="NCCloud" factoryName="NCCloud_Server">
+      <option name="exModules" value="" />
+      <module name="uapbd" />
+      <option name="vmParams" value="-Dnc.exclude.modules=$IDEA_FIELD_EX_MODULES$ -Dnc.runMode=develop -Dnc.server.location=$IDEA_FIELD_NC_HOME$ -DEJBConfigDir=$IDEA_FIELD_NC_HOME$/ejbXMLs -Dorg.owasp.esapi.resources=$IDEA_FIELD_NC_HOME$/ierp/bin/esapi -DExtServiceConfigDir=$IDEA_FIELD_NC_HOME$/ejbXMLs -Duap.hotwebs=$IDEA_FIELD_HOTWEBS$ -Duap.disable.codescan=false -Xmx1024m -Dfile.encoding=$FIELD_ENCODING$ -Duser.timezone=GMT+8 " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (1)" type="Remote" nameIsGenerated="true">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <module name="pu" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="60.29.166.122" />
+      <option name="PORT" value="1236" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="1236" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Remote JVM Debug.Unnamed" />
+      <item itemvalue="Remote JVM Debug.Unnamed (1)" />
+      <item itemvalue="YonBuilder Premium服务.hrkq - 中间件" />
+      <item itemvalue="YonBuilder Premium服务.pu - 中间件" />
+      <item itemvalue="YonBuilder Premium服务.train - 中间件" />
+      <item itemvalue="YonBuilder Premium服务.uapbd - 中间件" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1ee2eb3-a2df-4a05-b5ee-915decf3673f" name="Changes" comment="" />
+      <created>1687333150357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687333150357</updated>
+      <workItem from="1725081752456" duration="944000" />
+      <workItem from="1725086883113" duration="874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/uihrkq_nccloud.jar!/nccloud/web/hrkq/tsattendrpt/action/TsAttendRptQueryMonthRptAction.class</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/hrkq/lib/pubhrkq_nccloud.jar!/nccloud/pub/hrkq/util/AttendRequestHelper.class</url>
+          <line>298</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/uiriaorg_nccloud.jar!/nccloud/web/uapbd/ref/orgv/DeptNCVersionTreeRef.class</url>
+          <line>46</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/uiriaorg_nccloud.jar!/nccloud/web/uapbd/ref/orgv/DeptNCVersionTreeRef.class</url>
+          <line>45</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/uipu_nccloud.jar!/nccloud/web/pu/buyingreq/action/BuyingreqCopyAction.class</url>
+          <line>101</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/uipu_nccloud.jar!/nccloud/web/pu/buyingreq/action/BuyingreqCopyAction.class</url>
+          <line>33</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/uipu_nccloud.jar!/nccloud/web/pu/buyingreq/action/BuyingreqCopyAction.class</url>
+          <line>43</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/pu/lib/pubpu_buyingreq.jar!/nc/vo/pu/m20/entity/PraybillHeaderVO.class</url>
+          <line>596</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/hrcloud-mix-attend-report-app-4.2.0-NCC202207-SNAPSHOT-web.jar!/com/yonyou/hrcloud/attentrpt/web/TsAttendRptController.class</url>
+          <line>326</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/hrcloud-mix-attend-report-app-4.2.0-NCC202207-SNAPSHOT-web.jar!/com/yonyou/hrcloud/attentrpt/web/TsAttendRptController.class</url>
+          <line>325</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mddbLevel-1.jar!/nc/md/common/MetaDataDAO.class</url>
+          <line>72</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/order_cjm/src/public/nc/bs/pub/action/N_PU51_SAVEBASE.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/order_cjm/src/public/nc/bs/pub/action/N_PU51_SAVEBASE.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/order_cjm/src/public/nc/bs/pub/action/N_PU51_SAVEBASE.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/order_cjm/src/public/nccloud/api/pu/order_cjmmanage/order_cjmmaster/Order_cjmMasterManageResources.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/order_cjm/src/public/nccloud/api/pu/order_cjmmanage/order_cjmmaster/Order_cjmMasterManageResources.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/TestOpenApi/src/nccloud/api/testcase/base/Test.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/hrpub/lib/pubhrpub_psnclconfig.jar!/nc/listener/hr/psnclrule/PsnclconfigAddHROrgEventListener.class</url>
+          <line>82</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/TestOpenApi/src/nccloud/api/test/utils/ResultMessageUtil.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nc/vo/pu/pu_caigouhet_zgl/Pu_caigouhet_zglMasterVO.java</url>
+          <line>436</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nc/vo/pu/pu_caigouhet_zgl/Pu_caigouhet_zglMasterVO.java</url>
+          <line>424</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/external/lib/pubplatform_baseLevel-1.jar!/nccloud/framework/service/ServiceHandler.class</url>
+          <line>89</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/private/nc/impl/pu/caigoudingd_zgl/caigoudingd_zglmaster/Caigoudingd_zglMasterVOServiceImpl.java</url>
+          <line>550</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/private/nc/impl/pu/caigoudingd_zgl/caigoudingd_zglmaster/Caigoudingd_zglMasterVOServiceImpl.java</url>
+          <line>536</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/lcdp/lib/publcdp_codebaseLevel-1.jar!/nc/codeplatform/framework/service/ServiceSupport.class</url>
+          <line>124</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/lcdp/lib/publcdp_codebaseLevel-1.jar!/nc/codeplatform/framework/service/ServiceSupport.class</url>
+          <line>168</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/lcdp/lib/publcdp_codebaseLevel-1.jar!/nc/codeplatform/framework/service/ServiceSupport.class</url>
+          <line>176</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/riawf/META-INF/lib/riawf_riawfplatform_rtLevel-1.jar!/nc/impl/uap/pf/PfExchangeServiceImpl.class</url>
+          <line>182</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/riawf/lib/pubriawf_riawfplatform_rtLevel-1.jar!/nc/bs/pf/change/BillMappingConvertor.class</url>
+          <line>958</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/riawf/lib/pubriawf_riawfplatform_rtLevel-1.jar!/nc/bs/pf/change/BillMappingConvertor.class</url>
+          <line>1001</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/riawf/lib/pubriawf_riawfplatform_rtLevel-1.jar!/nc/bs/pf/change/BillMappingConvertor.class</url>
+          <line>661</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>437</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>421</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>418</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>484</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>530</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>516</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacade.class</url>
+          <line>492</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacadeUtil.class</url>
+          <line>37</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacadeUtil.class</url>
+          <line>44</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacadeUtil.class</url>
+          <line>21</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/uapbs/lib/pubuapbs_mdbusiLevel-1.jar!/nc/md/data/access/DASFacadeUtil.class</url>
+          <line>40</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nccloud/api/pu/pu_caigouhet_zglmanage/pu_caigouhet_zglmaster/Pu_caigouhet_zglMasterManageResources.java</url>
+          <line>207</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nccloud/api/pu/pu_caigouhet_zglmanage/pu_caigouhet_zglmaster/Pu_caigouhet_zglMasterManageResources.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/lcdp/lib/publcdp_codebaseLevel-1.jar!/nc/codeplatform/framework/service/ServiceSupport.class</url>
+          <line>83</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/client/nccloud/web/pu/pu_caigouhet_zgl/pu_caigouhet_zglmaster/action/AddPu_caigouhet_zglMasterVOAction.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nc/vo/pu/pu_caigouhet_zgl/Pu_caigouhet_zglMasterVO.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nc/vo/pu/pu_caigouhet_zgl/Pu_caigouhet_zglMasterVO.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/private/nc/impl/pu/caigoudingd_zgl/caigoudingd_zglmaster/AggCaigoudingd_zglMasterVOExcelOutputProcessor.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/private/nc/impl/pu/pu_caigouhet_zgl/pu_caigouhet_zglmaster/AggPu_caigouhet_zglMasterVOExcelOutputProcessor.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/client/nccloud/web/pu/pu_caigouhet_zgl/pu_caigouhet_zglmaster/action/SavePu_caigouhet_zglMasterVOAction.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint type="java-field">
+          <url>jar://$PROJECT_DIR$/../ncc-home/modules/pu/lib/pubpu_buyingreq.jar!/nc/vo/pu/m20/entity/PraybillHeaderVO.class</url>
+          <line>113</line>
+          <properties field="VMEMO" class="nc.vo.pu.m20.entity.PraybillHeaderVO">
+            <option name="WATCH_ACCESS" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nc/vo/pu/pu_caigouhet_zgl/Pu_caigouhet_zglMasterVO.java</url>
+          <line>56</line>
+          <properties field="PK_CAIGOUHET_ZGLMASTER" class="nc.vo.pu.pu_caigouhet_zgl.Pu_caigouhet_zglMasterVO" />
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <breakpoint type="java-wildcard-method">
+          <properties class="PraybillHeaderVO" method="getPk_org()">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="29" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/pu/pu_caigouhet_zgl/src/public/nc/vo/pu/pu_caigouhet_zgl/Pu_caigouhet_zglMasterVO.java</url>
+          <line>97</line>
+          <properties class="nc.vo.pu.pu_caigouhet_zgl.Pu_caigouhet_zglMasterVO" method="setPk_caigouhet_zglmaster">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="key" />
+        <PinnedItemInfo parentTag="nc.bs.framework.util.Attrs" memberName="array" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="vo" />
+        <watch expression="context" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

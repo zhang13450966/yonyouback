@@ -1,0 +1,3 @@
+insert into BD_REFINFO ( CODE,ISTREELAZYLOAD,ISNEEDPARA,ISSPECIALREF,LAYER,REFTYPE,METADATANAMESPACE,METADATATYPENAME,MOBILEREFPATH,MODULENAME,NAME,PARA1,PARA2,PARA3,PK_COUNTRY,PK_INDUSTRY,PK_REFINFO,REFCLASS,REFPATH,REFSYSTEM,RESERV1,RESERV2,RESERV3,RESID,RESIDPATH,WHEREPART,WORKFLOWCONDITIONUSEUNITORG,TS,DR ) values  ( '4004900H1','N',null,null,null,0,'pu','order_cjmMaster',null,'pu','采购订单-陈金明_主实体_默认表参照_order_cjm_order_cjmMaster',null,null,null,null,null,'1001A11LCP00001J0971',null,'pu/refer/order_cjm/order_cjmMasterDefaultGridRef/index',null,null,null,null,'order_cjm','order_cjm',null,null,'2023-08-31 17:36:06',0 ) 
+/
+

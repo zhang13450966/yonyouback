@@ -1,0 +1,3 @@
+insert into PUB_PAGE_TEMPLET ( PK_PAGE_TEMPLET,CODE,NAME,RESID,CREATOR,CREATIONTIME,MODIFIER,MODIFIEDTIME,TEMPLETDESC,ISDEFAULT,PARENTID,PAGECODE,CLAZZ,METAID,HEADCODE,APPCODE,APPID,RESMODULE,PK_GROUP,PK_ORG,LAYOUT,PAGESTYLE,DR,TS ) values  ( '1001A11LCP00001J08L4','4004900H1_order_cjmMaster','主实体',null,null,null,null,null,null,'Y','root','4004900H1_order_cjmMaster','nc.vo.pu.order_cjm.AggOrder_cjmMasterVO','b357e32e-7d0c-437c-95ea-18358ee8ea4c','order_cjmMasterForm','4004900H1',null,null,null,null,null,null,0,'2023-08-31 17:35:45' ) 
+/
+

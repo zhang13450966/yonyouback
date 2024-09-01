@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="pu">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.region_cjm.region_cjmmaster.IRegion_CjmMasterVOService</interface>
+			<implementation>nc.impl.pu.region_cjm.region_cjmmaster.Region_CjmMasterVOServiceImpl</implementation>
+		</component>
+	</public>
+</module>

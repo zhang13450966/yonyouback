@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actions>
+  <action>
+    <name>uapbd.patient.SavePatientMasterVOAction</name>
+    <label>保存动作</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.SavePatientMasterVOAction</clazz>
+  </action>
+  <action>
+    <name>uapbd.patient.PatientMasterTreeRefAction</name>
+    <label>档案特性默认树型参照</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.PatientMasterTreeRefAction</clazz>
+  </action>
+  <action>
+    <name>uapbd.patient.PrintPatientMasterVOAction</name>
+    <label>打印动作</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.PrintPatientMasterVOAction</clazz>
+  </action>
+  <action>
+    <name>uapbd.patient.ListPatientMasterVOAction</name>
+    <label>列表查询动作</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.ListPatientMasterVOAction</clazz>
+  </action>
+  <action>
+    <name>uapbd.patient.PatientMasterGridRefAction</name>
+    <label>档案特性默认表型参照</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.PatientMasterGridRefAction</clazz>
+  </action>
+  <action>
+    <name>uapbd.patient.PatientMasterDefaultGridRefAction</name>
+    <label>默认表型参照（非档案特性生成）</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.PatientMasterDefaultGridRefAction</clazz>
+  </action>
+  <action>
+    <name>uapbd.patient.AddPatientMasterVOAction</name>
+    <label>新增动作</label>
+    <clazz>nccloud.web.uapbd.patient.patientmaster.action.AddPatientMasterVOAction</clazz>
+  </action>
+</actions>

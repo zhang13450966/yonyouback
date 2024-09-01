@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="resources">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../ncc-home/resources" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../ncc-home/resources" />
+    </SOURCES>
+  </library>
+</component>

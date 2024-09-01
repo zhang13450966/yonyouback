@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<module name="pu">
+	<public>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.pu.order_cjm.order_cjmmaster.IOrder_cjmMasterVOService</interface>
+			<implementation>nc.impl.pu.order_cjm.order_cjmmaster.Order_cjmMasterVOServiceImpl</implementation>
+		</component>
+	</public>
+</module>
